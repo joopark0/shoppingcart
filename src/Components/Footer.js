@@ -1,7 +1,8 @@
 const Footer = () => {
   return (
     <div className="footer-main">
-      <span>Copyright joo park</span>
+      <span>Park Performance</span>
+      <span>Copyright Joo Park</span>
     </div>
   );
 };

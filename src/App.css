@@ -57,4 +57,7 @@
   max-width: 100vw;
   height: 40px;
   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
