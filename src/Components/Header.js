@@ -1,3 +1,5 @@
+import shoppingcart from '../images/shopping-cart.png';
+
 const Header = () => {
   return (
     <div>
@@ -9,6 +11,13 @@ const Header = () => {
           <button className="nav-buttons">About Us</button>
           <button className="nav-buttons">Contact Us</button>
         </nav>
+        <button className="shoppingcart">
+          <img
+            src={shoppingcart}
+            alt="Shopping Cart"
+            className="shoppingcartimg"
+          />
+        </button>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
   justify-content: space-between;
   background-color: antiquewhite;
   height: 70px;
+  align-items: center;
 }
 .nav-bar{
   display: flex;
@@ -60,4 +61,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.shoppingcart{
+  height: 100%;
+  width: 70px;
+}
+
+.shoppingcartimg{
+  height:30px;
+  width: 30px;
 }
