@@ -3,6 +3,8 @@ import shoppingcart from './images/shopping-cart.png';
 import HomePage from './components/HomePage';
 import Store from './components/Store';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+import About from './components/About';
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -19,8 +21,12 @@ function App() {
               <Link to="/Store" className="nav-buttons">
                 <button className="nav-buttons">Store</button>
               </Link>
-              <button className="nav-buttons">About Us</button>
-              <button className="nav-buttons">Contact Us</button>
+              <Link to="/About" className="nav-buttons">
+                <button className="nav-buttons">About Us</button>
+              </Link>
+              <Link to="/Contact" className="nav-buttons">
+                <button className="nav-buttons">Contact Us</button>
+              </Link>
             </nav>
             <button className="shoppingcart">
               <img
@@ -35,6 +41,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/Store" element={<Store />}></Route>
+        <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/About" element={<About />}></Route>
       </Routes>
       <Footer />
     </div>
