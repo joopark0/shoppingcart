@@ -6,8 +6,11 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
 import { Routes, Route, Link } from 'react-router-dom';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [cartNumber, setcartNumber] = useState(0);
+
   return (
     <div>
       <div>
@@ -28,13 +31,16 @@ function App() {
                 <button className="nav-buttons">Contact Us</button>
               </Link>
             </nav>
-            <button className="shoppingcart">
-              <img
-                src={shoppingcart}
-                alt="Shopping Cart"
-                className="shoppingcartimg"
-              />
-            </button>
+            <div className="cartcontainer">
+              <div className="cart-number">{cartNumber}</div>
+              <button className="shoppingcart">
+                <img
+                  src={shoppingcart}
+                  alt="Shopping Cart"
+                  className="shoppingcartimg"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -47,6 +53,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
