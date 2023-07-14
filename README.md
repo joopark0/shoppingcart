@@ -1,4 +1,9 @@
-# Shopping Cart Odin Project
+# Shopping Cart 
+**WIP**
+
+Sample website using React for a web store where you can purchase items
+
+Created for The Odin Project
 
 ## Color Palette
 
