@@ -105,6 +105,29 @@
 
 .store-container{
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.menu-section-container{
+  flex-grow: 1;
+  background-color: #FFFFFC;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-style: none;
+  border-right-style: solid;
+  
+}
+.menu-category{
+  padding: 10px;
+}
+.menu-category-container{
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.item-section-container{
+  flex-grow: 4;
+  background-color: #FFFFFC;
 }
