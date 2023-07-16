@@ -4,6 +4,9 @@
   background-color: #FFFFFC;
   height: 70px;
   align-items: center;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
 }
 .nav-bar{
   display: flex;
