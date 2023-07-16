@@ -6,7 +6,7 @@
   align-items: center;
   border-style: none;
   border-bottom-style: solid;
-  border-bottom-width: 3px;
+  border-bottom-width: 1px;
 }
 .nav-bar{
   display: flex;
@@ -19,12 +19,15 @@
   height: 100%;
   background: transparent;
   border: 0;
-  width: 100%;
+  width: 100px;
   max-width: 100px;
+  transition: 0.5s;
 }
 
 .nav-buttons:hover{
-  background-color: red;
+  color:#6CCFF6;
+  font-size: 110%;
+  transition: 0.5s;
 }
 
 .home-banner{
@@ -112,25 +115,40 @@
   height: 100vh;
 }
 .menu-section-container{
-  flex-grow: 1;
+  flex:1;
   background-color: #FFFFFC;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  border-style: none;
-  border-right-style: solid;
   
 }
 .menu-category{
   padding: 10px;
+  transition: 0.5s;
+}
+.menu-whitespace{
+  height: 50px;
+
+}
+.menu-whitespace-bottom{
+  height: 100vh;
+
+}
+.menu-category:hover{
+  color:#6CCFF6;
+  font-size: 125%;
+  transition: 0.5s;
 }
 .menu-category-container{
   display: flex;
-  margin-top: 80px;
+  height: 400px;
   flex-direction: column;
   align-items: flex-end;
+  border-style: none;
+  border-right-style: solid;
+  border-right-width: 1px;
 }
 .item-section-container{
-  flex-grow: 4;
+  flex: 4;
   background-color: #FFFFFC;
 }
