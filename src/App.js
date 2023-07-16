@@ -1,6 +1,7 @@
 import './App.css';
 import shoppingcart from './images/shopping-cart.png';
 import HomePage from './components/HomePage';
+import logo from './images/logo-no-background.png';
 import Store from './components/Store';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
@@ -19,7 +20,11 @@ const App = () => {
     <div>
       <div>
         <div className="header-box">
-          <button className="nav-logo"></button>
+          <Link to="/">
+            <button className="nav-logo">
+              <img src={logo} alt="Logo" />
+            </button>
+          </Link>
           <div className="nav-right-container">
             <nav className="nav-bar">
               <Link to="/" className="nav-buttons">

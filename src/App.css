@@ -92,10 +92,12 @@
   padding: 15px;
   background-origin: content-box;
   border: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url('./images/logo-no-background.png');
 }
+.nav-logo img{
+  width: 280px;
+  height:100%
+}
+
 .nav-right-container{
   display: flex;
   width: 40%;
