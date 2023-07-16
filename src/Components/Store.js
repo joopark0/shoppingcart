@@ -1,6 +1,7 @@
 import Item from './Item';
 
-const Store = () => {
+const Store = (props) => {
+  const { addToCartCounter } = props;
   return (
     <div className="store-container">
       <div className="menu-section-container">
@@ -12,7 +13,7 @@ const Store = () => {
         </div>
         <div className="menu-whitespace-bottom"></div>
       </div>
-      <Item />
+      <Item addToCartCounter={addToCartCounter} />
     </div>
   );
 };

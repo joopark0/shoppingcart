@@ -10,6 +10,10 @@ import { useState } from 'react';
 
 const App = () => {
   const [cartNumber, setcartNumber] = useState(0);
+  const [cartItems, setcartItems] = useState([]);
+  const addToCartCounter = (x) => {
+    setcartNumber(cartNumber + x);
+  };
 
   return (
     <div>
@@ -46,7 +50,10 @@ const App = () => {
       </div>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/Store" element={<Store />}></Route>
+        <Route
+          path="/Store"
+          element={<Store addToCartCounter={addToCartCounter} />}
+        ></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/About" element={<About />}></Route>
       </Routes>
