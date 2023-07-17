@@ -13,10 +13,15 @@ import { useState } from 'react';
 const App = () => {
   const [cartNumber, setcartNumber] = useState(0);
   const [cartItems, setcartItems] = useState([]);
+  const [cartActive, setcartActive] = useState(false);
   const addToCartCounter = (x) => {
     setcartNumber(cartNumber + x);
   };
 
+  const toggleCartActive = () => {
+    setcartActive((prevActive) => !prevActive);
+    console.log(cartActive);
+  };
   const setCart = (x) => {
     setcartItems([...cartItems, x]);
   };
@@ -47,7 +52,7 @@ const App = () => {
             </nav>
             <div className="cartcontainer">
               <div className="cart-number">{cartNumber}</div>
-              <button className="shoppingcart">
+              <button className="shoppingcart" onClick={toggleCartActive}>
                 <img
                   src={shoppingcart}
                   alt="Shopping Cart"
@@ -55,8 +60,13 @@ const App = () => {
                 />
               </button>
             </div>
-            <div className="shopping-cart">
+            <div
+              className={cartActive ? 'shopping-cart active' : 'shopping-cart'}
+            >
               <div className="shopping-cart-name">Shopping Cart</div>
+              <button className="shopping-cart-exit" onClick={toggleCartActive}>
+                X
+              </button>
               {cartItems.map((x) => {
                 return (
                   <li>
