@@ -6,6 +6,7 @@ import Store from './components/Store';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
+import gr86 from './images/gr86model.jpeg';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -14,6 +15,10 @@ const App = () => {
   const [cartItems, setcartItems] = useState([]);
   const addToCartCounter = (x) => {
     setcartNumber(cartNumber + x);
+  };
+
+  const setCart = (x) => {
+    setcartItems([...cartItems, x]);
   };
 
   return (
@@ -50,6 +55,17 @@ const App = () => {
                 />
               </button>
             </div>
+            <div className="shopping-cart">
+              <div className="shopping-cart-name">Shopping Cart</div>
+              {cartItems.map((x) => {
+                return (
+                  <li>
+                    <img src={gr86}></img>
+                    {x}
+                  </li>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -57,7 +73,9 @@ const App = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route
           path="/Store"
-          element={<Store addToCartCounter={addToCartCounter} />}
+          element={
+            <Store addToCartCounter={addToCartCounter} setCart={setCart} />
+          }
         ></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/About" element={<About />}></Route>

@@ -1,7 +1,7 @@
 import gr86 from '../images/gr86model.jpeg';
 
 const Item = (props) => {
-  const { addToCartCounter } = props;
+  const { addToCartCounter, setCart } = props;
   return (
     <div className="item-section-container">
       <div className="item-top-container">
@@ -20,6 +20,7 @@ const Item = (props) => {
             className="add-cart"
             onClick={() => {
               addToCartCounter(1);
+              setCart('gr86');
             }}
           >
             Add to Cart

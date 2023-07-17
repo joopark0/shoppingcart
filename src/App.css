@@ -210,3 +210,35 @@
   width: 100%;
   height: 100%;
 }
+
+.menu-category.active{
+  color: #6CCFF6;
+}
+
+.shopping-cart{
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  border-width: 0.5px;
+  border-style: solid;
+  background-color: #FFFFFC;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping-cart-name{
+  padding: 20px;
+  font-size: 34px;
+  width: 100%;
+  text-decoration: underline;
+}
+
+.shopping-cart img{
+  width: 50px;
+  height:50px;
+}
+li{
+  list-style-type: none;
+}
