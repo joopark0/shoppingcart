@@ -22,7 +22,6 @@ const App = () => {
 
   const toggleCartActive = () => {
     setcartActive((prevActive) => !prevActive);
-    console.log(cartActive);
   };
 
   const setCart = (x) => {
@@ -45,7 +44,6 @@ const App = () => {
 
       setcartItems(newCart);
     }
-    console.log(cartItems);
   };
 
   return (
