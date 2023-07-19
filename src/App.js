@@ -93,8 +93,10 @@ const App = () => {
               {cartItems.map((x) => {
                 return (
                   <li>
-                    <img src={gr86} alt="gr86"></img>
-                    {x.name} {x.amount}
+                    <div className="cart-item">
+                      <img src={gr86} alt="gr86"></img>
+                      {x.name} {x.amount}
+                    </div>
                   </li>
                 );
               })}
