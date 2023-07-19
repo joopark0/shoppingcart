@@ -20,7 +20,10 @@ const Item = (props) => {
             className="add-cart"
             onClick={() => {
               addToCartCounter(1);
-              setCart('gr86');
+              setCart({
+                name: 'gr86',
+                amount: 1,
+              });
             }}
           >
             Add to Cart

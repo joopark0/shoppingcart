@@ -71,7 +71,7 @@ const App = () => {
                 return (
                   <li>
                     <img src={gr86}></img>
-                    {x}
+                    {x.name} {x.amount}
                   </li>
                 );
               })}
