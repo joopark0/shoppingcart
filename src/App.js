@@ -14,6 +14,7 @@ const App = () => {
   const [cartNumber, setcartNumber] = useState(0);
   const [cartItems, setcartItems] = useState([]);
   const [cartActive, setcartActive] = useState(false);
+
   const addToCartCounter = (x) => {
     setcartNumber(cartNumber + x);
   };
@@ -22,8 +23,28 @@ const App = () => {
     setcartActive((prevActive) => !prevActive);
     console.log(cartActive);
   };
+
   const setCart = (x) => {
-    setcartItems([...cartItems, x]);
+    //Check if Item exists, returns true if it does
+    const itemExists = cartItems.some((item) => item.name === x.name);
+
+    //runs if item exists
+    if (itemExists) {
+      const newCart = cartItems.map((item) => {
+        if (item.name === x.name) {
+          return { ...item, amount: item.amount + 1 };
+        }
+        return item;
+      });
+
+      setcartItems(newCart);
+    } else {
+      //creates new if exists
+      const newCart = [...cartItems, { ...x, amount: 1 }];
+
+      setcartItems(newCart);
+    }
+    console.log(cartItems);
   };
 
   return (
@@ -67,10 +88,11 @@ const App = () => {
               <button className="shopping-cart-exit" onClick={toggleCartActive}>
                 X
               </button>
+              {/* Maps the shopping cart*/}
               {cartItems.map((x) => {
                 return (
                   <li>
-                    <img src={gr86}></img>
+                    <img src={gr86} alt="gr86"></img>
                     {x.name} {x.amount}
                   </li>
                 );
