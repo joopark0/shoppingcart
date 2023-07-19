@@ -95,7 +95,12 @@ const App = () => {
                   <li>
                     <div className="cart-item">
                       <img src={gr86} alt="gr86"></img>
-                      {x.name} {x.amount}
+                      <div className="cart-item-na-container">
+                        <div className="cart-item-name">{x.name}</div>
+                        <div className="cart-item-amount">
+                          Amount: {x.amount}
+                        </div>
+                      </div>
                     </div>
                   </li>
                 );
