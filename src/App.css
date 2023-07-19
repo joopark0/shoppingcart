@@ -257,3 +257,16 @@ li{
   height: 50px;
   position: absolute;
 }
+
+.list-container{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFC;
+  padding-left: 40px;
+}
+
+.list-container img{
+  width: 200px;
+  height: 200px;
+}

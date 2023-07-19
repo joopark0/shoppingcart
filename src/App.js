@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
 import gr86 from './images/gr86model.jpeg';
+import Item from './components/Item';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -111,6 +112,12 @@ const App = () => {
         ></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/About" element={<About />}></Route>
+        <Route
+          path="/Store/gr86"
+          element={
+            <Item addToCartCounter={addToCartCounter} setCart={setCart} />
+          }
+        ></Route>
       </Routes>
       <Footer />
     </div>

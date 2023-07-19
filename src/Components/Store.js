@@ -1,4 +1,4 @@
-import Item from './Item';
+import ModelList from './ModelList';
 
 const Store = (props) => {
   const { addToCartCounter, setCart } = props;
@@ -13,7 +13,10 @@ const Store = (props) => {
         </div>
         <div className="menu-whitespace-bottom"></div>
       </div>
-      <Item addToCartCounter={addToCartCounter} setCart={setCart} />
+      <ModelList
+        addToCartCounter={addToCartCounter}
+        setCart={setCart}
+      ></ModelList>
     </div>
   );
 };
