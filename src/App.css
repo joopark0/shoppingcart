@@ -325,3 +325,8 @@ li{
 .about-wrap{
   display: flex;
 }
+
+.about-desc{
+  margin-left: 20px;
+  margin-top: 10px;
+}
