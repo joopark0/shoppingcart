@@ -296,3 +296,20 @@ li{
   width: 80px;
   height: 80px;
 }
+
+.about-container{
+  display: flex;
+  height: 600px;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+.about-container img{
+  width:750px;
+  height: 500px;
+}
+.about-whitespace{
+  width: 100%;
+  height: 150px;
+}

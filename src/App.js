@@ -47,7 +47,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="page-wrapper">
       <div>
         <div className="header-box">
           <Link to="/">
