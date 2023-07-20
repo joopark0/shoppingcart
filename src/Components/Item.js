@@ -40,17 +40,38 @@ const Item = (props) => {
           The aluminum engine hood, roof and front fenders are lightweight and
           rigid. This car also employs air outlets, side sill spoilers, and
           other parts to bring improved aerodynamic efficiency and steering
-          responsiveness. • 1/24 scale plastic model assembly kit. Length:
-          178mm, width: 74mm, height: 55mm. • The model recreates the air
-          outlets, side sill spoilers, and the other aerodynamic parts for more
-          realism. • Suspension detail features front strut and rear double
-          wishbone systems. • Details such as a 2.4-liter horizontally opposed
-          four-cylinder DOHC engine are faithfully depicted and the hood can be
-          held open by a stay. • Differences from its sister car the BRZ (ZD8)
-          are accurately captured: front bumper and lights, rear stabilizer
-          direction, and more. • Wheels are paired with solid synthetic rubber
-          tires.
+          responsiveness.
         </span>
+        <br></br>
+        <br></br>
+        <span>
+          • 1/24 scale plastic model assembly kit. Length: 178mm, width: 74mm,
+          height: 55mm.{' '}
+        </span>
+        <br></br>
+        <span>
+          • The model recreates the air outlets, side sill spoilers, and the
+          other aerodynamic parts for more realism.
+        </span>
+        <br></br>
+        <span>
+          • Suspension detail features front strut and rear double wishbone
+          systems.
+        </span>
+        <br></br>
+        <span>
+          • Details such as a 2.4-liter horizontally opposed four-cylinder DOHC
+          engine are faithfully depicted and the hood can be held open by a
+          stay.
+        </span>
+        <br></br>
+        <span>
+          • Differences from its sister car the BRZ (ZD8) are accurately
+          captured: front bumper and lights, rear stabilizer direction, and
+          more.
+        </span>
+        <br></br>
+        <span>• Wheels are paired with solid synthetic rubber tires.</span>
       </div>
     </div>
   );

@@ -8,6 +8,12 @@ const ModelList = (props) => {
         <Link to="/Store/gr86">
           <img src={gr86} alt="GR86 Model" />
         </Link>
+        <Link to="/Store/gr86">
+          <img src={gr86} alt="GR86 Model" />
+        </Link>
+        <Link to="/Store/gr86">
+          <img src={gr86} alt="GR86 Model" />
+        </Link>
       </div>
     </div>
   );
