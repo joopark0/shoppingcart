@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="home-banner">
         <div className="banner-text">Welcome to the Store!</div>
         <Link to="/Store">
-          <button className="banner-shop">Shop Now</button>
+          <button className="button-28">Shop Now</button>
         </Link>
       </div>
       <div className="popular-section"></div>

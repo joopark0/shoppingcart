@@ -17,7 +17,7 @@ const Item = (props) => {
             Sports Car Series product.
           </div>
           <button
-            className="add-cart"
+            className="button-28 buy"
             onClick={() => {
               addToCartCounter(1);
               setCart({
