@@ -299,17 +299,29 @@ li{
 
 .about-container{
   display: flex;
-  height: 600px;
+  height: 1000px;
   width: 100%;
   flex-direction: column;
   
 }
 
-.about-container img{
+.about-wrap img{
   width:750px;
   height: 500px;
 }
 .about-whitespace{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   width: 100%;
-  height: 150px;
+  height: 350px;
+}
+.about-whitespace img{
+  width: 800px;
+  height: 240px;
+}
+
+.about-wrap{
+  display: flex;
 }
