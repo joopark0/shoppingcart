@@ -393,4 +393,10 @@ li{
   border-style: solid;
   border-width: 1px;
   border-radius: 15px;
+  transition-duration: 0.2s;
+}
+
+.item-list img:hover{
+  width:420px;
+  height: 320px;
 }
